@@ -1,0 +1,39 @@
+package upload;
+
+import java.io.File;
+import java.util.concurrent.TimeUnit;
+
+import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Test;
+
+public class SnapshotPlease {
+	WebDriver uidriver;
+	
+	@BeforeTest
+	public void setup()
+	{
+	uidriver= new FirefoxDriver();
+	uidriver.get("http://facebook.com");
+	uidriver.manage().window().maximize();
+	uidriver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+	
+	}
+	@AfterTest
+	public void teardown()
+	{
+		uidriver.quit();
+	}
+@Test
+public void takemeScrrenshot() throws Exception
+{
+	File snap=((TakesScreenshot)uidriver).getScreenshotAs(OutputType.FILE);
+	FileUtils.copyFile(snap, new File("C:\\Users\\manjunathr\\Desktop\\Manjunath.jpeg"));
+	
+}
+}

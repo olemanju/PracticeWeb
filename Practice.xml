@@ -1,0 +1,13 @@
+<suite name ="manjuPractice">
+<test name="Manjunath">
+<clases>
+<class>com.ole.work>
+<include name="handlealerts"></include>
+<include name="emailValidation"></include>
+
+
+
+</class>
+</clases>
+</test>
+</suite>

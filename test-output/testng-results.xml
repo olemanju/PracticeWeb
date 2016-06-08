@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="31162" started-at="2016-01-03T05:25:22Z" finished-at="2016-01-03T05:25:53Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="31162" started-at="2016-01-03T05:25:22Z" finished-at="2016-01-03T05:25:53Z">
+      <class name="com.in.ss.Naukri">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.in.ss.Naukri@1b40d5f0]" name="setup" is-config="true" duration-ms="6583" started-at="2016-01-03T10:55:22Z" finished-at="2016-01-03T10:55:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="clickonMenulinks()[pri:0, instance:com.in.ss.Naukri@1b40d5f0]" name="clickonMenulinks" duration-ms="13498" started-at="2016-01-03T10:55:28Z" finished-at="2016-01-03T10:55:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickonMenulinks -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.in.ss.Naukri@1b40d5f0]" name="tearDown" is-config="true" duration-ms="11073" started-at="2016-01-03T10:55:42Z" finished-at="2016-01-03T10:55:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.in.ss.Naukri -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
